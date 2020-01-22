@@ -4,41 +4,50 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>learning html</title>
-    <a href="http://google.com"> must see</a>
-    <a href="about.html">about </a>
+    <title>Html forms </title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 
 </head>
 
 <body>
-    <p>hello, <strong>ninjas</strong></p>
-    <p>hi <small>yoni</small>web <em>page</em></p>
-    <div>
-        <h1>wooo</h1>
-        <h2>supppppp</h2>
-        <h1>sss</h1>
+    <h1 id type="title ">Html Forms </h1>
+    <form>
+        <label for="username">enter username</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="email">enter email</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" placeholder="password">
 
-    </div>
+        <p>Select your age :</p>
 
-    <div>
-        <ul>
-            <li>yoni</li>
-            <li>dani</li>
-            <li>sura</li>
-        </ul>
-    </div>
+        <input type="radio" name="age" value="0-25" id="option-1">
+        <label for="option-1">0-25</label>
+        <br><br>
+        <input type="radio" name="age" value="26-50" id="option-2">
+        <label for="option-2 ">26-50</label>
 
-    <div>
-        <ol>
-            <li>yoni</li>
-            <li>dani</li>
-            <li>sura</li>
-        </ol>
-    </div>
-    <span> iam a span tag <br></span>
-    <img src="cell phone.jpg" alt="a picture of phone ">
+        <br><br>
+
+        <label for="question">Security question</label>
+        <select name="quesstion" id="quesstion">
+            <option value="q1">what color are your favourite pair of socks?</option>
+            <option value="q2">what is your pets name</option>
+        </select>
+
+        <br><br>
+        <label for="">secuirity question answer</label>
+        <input type="text" name="answer" id="answer">
+
+        <br><br>
+        <label for="bio">your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you"></textarea>
+        <br><br>
+        <input type="submit" value="submit the form">
+    </form>
+
 </body>
 
 </html>
